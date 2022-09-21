@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary: #369c38;
+  --secondary: #132A13;
+  --padding: 15px;
+  --cinza : #405040;
+  --cinza-claro: #dedede;
+  --cor-primaria: #f06;
+  --texto: #fff;
+  --bg-padrao: #00095B;
+  --bg-destaue: #2d2d2d;
+  --font: 'Roboto', san-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 681px;
+}
