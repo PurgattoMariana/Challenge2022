@@ -5,7 +5,7 @@ export class QuestoesService {
 
      getQuestions: EventEmitter<any> = new EventEmitter();
 
- 
+
   getAll() {
     return this.getQuestions;
   }
@@ -39,22 +39,12 @@ export class QuestoesService {
     p2: [
     {
       option: 1,
-      label: "2 a 3 pessoas",
+      label: "Estrada",
       selected: false
     },
     {
       option: 2,
-      label: "3 a 4 pessoas",
-      selected: false
-    },
-    {
-      option: 3,
-      label: "4 a 5 pessoas",
-      selected: false
-    },
-    {
-      option: 4,
-      label: "5 ou mais pessoas",
+      label: "Cidade",
       selected: false
     }
     ]

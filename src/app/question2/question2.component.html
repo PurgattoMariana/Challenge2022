@@ -10,24 +10,21 @@
 </head>
 
 <body>
-    <button class="botaovoltar" routerLink="/home">
+    <button class="botaovoltar" routerLink="/question1">
     <span class="material-icons">
       arrow_back_ios
     </span>
   </button>
-
     <div class="corpo">
-        <h1 class="textotitulo">
-            / Descubra seu carro ideal!
+        <h1 class="textopergunta1">
+            / Pergunta 02
         </h1>
         <h2 class="textocentral">
-            A <b>Ford</b> preparou um questionario especial para te ajudar a descobrir qual de nossos carros mais combina com você!
+          Em sua rotina diária você costuma andar mais por estrada ou na cidade?
         </h2>
-        <button class="botao-comecar" routerLink="/question1">Iniciar Questionario
-        <span class="material-icons">
-          arrow_forward_ios
-        </span>
-      </button>
+        <div class="boxopcoes">
+            <button class="botaoopcao" [ngClass]="{ 'selected': item.selected }" (click)="$selectItem(item.option, x)" *ngFor="let item of question2; let x = index">{{ item.label }}</button>
+        </div>
     </div>
 </body>
 
