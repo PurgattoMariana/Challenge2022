@@ -10,24 +10,26 @@
 </head>
 
 <body>
-  <button class="botaovoltar">
+    <button class="botaovoltar" routerLink="/home">
     <span class="material-icons">
       arrow_back_ios
     </span>
   </button>
+
     <div class="corpo">
-      <h1 class="textotitulo">
-        / Descubra seu
-         carro ideal!
-      </h1>
-      <h2 class="textocentral">
-        A <b>Ford</b> preparou um questionario especial para te ajudar a descobrir qual de nossos carros mais combina com você!
-      </h2>
-      <button class="botao-comecar">Iniciar Questionario
+        <h1 class="textotitulo">
+            / Descubra seu carro ideal!
+        </h1>
+        <h2 class="textocentral">
+            A <b>Ford</b> preparou um questionario especial para te ajudar a descobrir qual de nossos carros mais combina com você!
+        </h2>
+        <button class="botao-comecar" routerLink="/question1">Iniciar Questionario
         <span class="material-icons">
           arrow_forward_ios
         </span>
       </button>
     </div>
+    <span style="font-size: 20px;">{{this.allQuestions | json}}</span>
 </body>
+
 </html>

@@ -1,19 +1,20 @@
-
-:root {
-  --primary: #369c38;
-  --secondary: #132A13;
-  --padding: 15px;
-  --cinza : #405040;
-  --cinza-claro: #dedede;
-  --cor-primaria: #f06;
-  --texto: #fff;
-  --bg-padrao: #00095B;
-  --bg-destaue: #2d2d2d;
-  --font: 'Roboto', san-serif;
+html,
+body {
+    font-family: "Antenna", Arial, Helvetica, "Microsoft YaHei", "微软雅黑", "STXihei", "华文细黑", "SimSun", "宋体";
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 681px;
+:root {
+    --primary: #369c38;
+    --secondary: #132A13;
+    --padding: 15px;
+    --cinza: #405040;
+    --cinza-claro: #dedede;
+    --cor-primaria: #f06;
+    --texto: #fff;
+    --bg-padrao: #00095B;
+    --bg-destaue: #2d2d2d;
+    --font: 'Roboto', san-serif;
 }

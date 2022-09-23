@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    display: flex;
+    background: white;
+    height: 4rem;
+    justify-content: space-between;
+}
+
+@mixin nav-links {
+    display: flex;
+    margin-right: 50px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 50px;
+}
+
+.logotipo {
+    margin-right: 7rem;
+    margin-left: 4rem;
+}
+
+ul {
+    @include nav-links;
+    padding-inline-start: 0px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    line-height: 32px;
+}
+
+a {
+    color: #008cba;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    span {
+        margin-right: 10px;
+    }
+    &.icon-search {
+        min-height: 32px;
+    }
+}
+
+.material-icons {
+    margin: 0;
+}

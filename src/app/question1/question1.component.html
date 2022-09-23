@@ -10,24 +10,27 @@
 </head>
 
 <body>
-  <button class="botaovoltar">
+    <button class="botaovoltar" routerLink="/question">
     <span class="material-icons">
       arrow_back_ios
     </span>
   </button>
     <div class="corpo">
-      <h1 class="textopergunta1">
-        / Pergunta 01
-      </h1>
-      <h2 class="textocentral">
-        Com quantas pessoas você costuma andar no carro?
-      </h2>
-      <div class="boxopcoes">
-        <button class="botaoopcao">2 a 3 pessoas</button>
-        <button class="botaoopcao">3 a 4 pessoas</button>
-        <button class="botaoopcao">4 a 5 pessoas</button>
-        <button class="botaoopcao">5 ou mais pessoas</button>
-      </div>
+        <h1 class="textopergunta1">
+            / Pergunta 01
+        </h1>
+        <h2 class="textocentral">
+            Com quantas pessoas você costuma andar no carro?
+        </h2>
+        <div class="boxopcoes">
+            <button class="botaoopcao" [ngClass]="{ 'selected': item.selected }" (click)="$selectItem(item.option, x)" *ngFor="let item of question1; let x = index">{{ item.label }}</button>
+        </div>
     </div>
+
+
+    <span style="font-size: 20px;">{{this.allQuestions.p1 | json}}</span>
+
+
 </body>
+
 </html>
