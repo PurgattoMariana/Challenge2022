@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: var(--font);
+}
+
+.botaovoltar{
+  background-color: transparent;
+  color:  var(--bg-padrao);
+  font-size: xx-large;
+  border: 0;
+  cursor: pointer;
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.botaovoltar .material-icons{
+  font-size: 45px;
+}
+
+.corpo{
+  padding-left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 100px;
+
+}
+.textopergunta1{
+  font-size: 36px;
+  color:  var(--bg-padrao);
+  margin: 1rem;
+}
+
+.textocentral {
+  font: 26px Arial, sans-serif;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+
+.boxopcoes {
+  height: 12rem;
+  width: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.botaoopcao{
+  height: 73px;
+  width: 311px;
+  left: 317px;
+  top: 347px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #008CBA;
+  border: 0;
+  color: white;
+  font-size: 24px;
+}
+
+@media (max-width: 425px) {
+    header{
+        flex-direction: column;
+    }
+}
