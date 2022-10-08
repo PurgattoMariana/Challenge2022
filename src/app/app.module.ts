@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { RouterModule } from '@angular/router';
 import { ROUTER } from './app-routing.module';
 import { QuestoesService } from './shared/service/questoes.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,11 @@ import { QuestoesService } from './shared/service/questoes.service';
     HomeComponent,
     QuestionsComponent,
     Question1Component,
-    Question2Component
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTER)
+    RouterModule.forRoot(ROUTER),
+    HttpClientModule
   ],
   providers: [QuestoesService],
   bootstrap: [AppComponent]

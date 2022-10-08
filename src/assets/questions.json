@@ -1,0 +1,213 @@
+{
+  "questions": [
+      {
+          "questionText": "Qual a sua idade?",
+          "options": [{
+                  "text": "18 a 25 anos",
+                  "nopointsquestion": true
+              },
+              {
+                  "text": "26 a 35 anos",
+                  "nopointsquestion": true
+              },
+              {
+                  "text": "36 a 45 anos",
+                  "nopointsquestion": true
+              },
+              {
+                  "text": "46 a 60 anos",
+                  "nopointsquestion": true
+              },
+              {
+                  "text": "mais de 60 anos",
+                  "nopointsquestion": true
+              }
+          ]
+      },
+      {
+          "questionText": "Qual uso você pretende fazer do veículo?",
+          "options": [{
+                  "text": "uso pessoal",
+                  "usopessoal": true
+              },
+              {
+                  "text": "uso profissional",
+                  "usoprofissional": true
+              }
+          ]
+      },
+      {
+          "questionText": "Qual tipo de transporte você faz?",
+          "options": [{
+                  "text": "Transporte de mercadorias"
+              },
+              {
+                  "text": "Transporte de pessoas"
+              }
+          ]
+      },
+      {
+          "questionText": "Ao transportar mercadorias, você preza por uma proteção contra clima e fenômenos externos ou flexibilidade ao colocar e retirar os itens?",
+          "options": [{
+                  "text": "Proteção"
+              },
+              {
+                  "text": "Flexibilidade"
+              }
+          ]
+      },
+      {
+          "questionText": "Você enfrenta algum dos obstáculos abaixo diariamente?",
+          "options": [{
+                  "text": "Estrada de terra"
+              },
+              {
+                  "text": "Subidas íngremes"
+              },
+              {
+                  "text": "Ambientes de dificil acesso"
+              },
+              {
+                  "text": "Não enfrento"
+              }
+          ]
+      },
+      {
+          "questionText": "Para você, é importante que o transporte tenha compartimentos para organizar as mercadorias?",
+          "options": [{
+                  "text": "Sim"
+              },
+              {
+                  "text": "Não"
+              }
+          ]
+      },
+      {
+          "questionText": "Entre um veículo maior e mais difícil de manusear na cidade e um com menor capacidade de carga porém mais fácil de andar na cidade, qual você prefere?",
+          "options": [{
+                  "text": "Maior Capacidade"
+              },
+              {
+                  "text": "Menor Capacidade"
+              }
+          ]
+      },
+      {
+          "questionText": "O que você valoriza mais, uma cabine que carrega mais pessoas ou uma caçamba maior?",
+          "options": [{
+                  "text": "Maior Caçamba"
+              },
+              {
+                  "text": "Maior cabine"
+              }
+          ]
+      },
+      {
+          "questionText": "Em qual das categorias abaixo você se encaixa?",
+          "options": [{
+                  "text": "Transporte individual (aplicativo, taxi ou semelhantes)"
+              },
+              {
+                  "text": "Transporte de mais de 9 pessoas (por exemplo, transporte escolar)"
+              }
+          ]
+      },
+      {
+          "questionText": "Quantos passageiros você costuma carregar?",
+          "options": [{
+                  "text": "Mais de 14"
+              },
+              {
+                  "text": "Menos de 14"
+              }
+          ]
+      },
+      {
+          "questionText": "Você costuma andar com quantas pessoas no carro? (Incluindo você)",
+          "options": [{
+                  "text": "1 a 2 pessoas"
+              },
+              {
+                  "text": "3 a 4 pessoas"
+              },
+              {
+                  "text": "5 a 6 pessoas"
+              },
+              {
+                  "text": "mais de 6 pessoas"
+              }
+          ]
+      },
+      {
+          "questionText": "Como seu porta malas costuma ficar (Considere eventos e viagens)?",
+          "options": [{
+                  "text": "lotado"
+              },
+              {
+                  "text": "quase lotado"
+              },
+              {
+                  "text": "quase vazio"
+              },
+              {
+                  "text": "vazio"
+              }
+          ]
+      },
+      {
+          "questionText": "Qual distancia  você percorre no seu dia a dia (Km)?",
+          "options": [{
+                  "text": "1 a 5 km"
+              },
+              {
+                  "text": "5 a 10 km"
+              },
+              {
+                  "text": "10 a 30 km"
+              },
+              {
+                  "text": "30 + km"
+              }
+          ]
+      },
+      {
+          "questionText": "Você enfrenta algum dos obstáculos abaixo diariamente?",
+          "options": [{
+                  "text": "Subidas íngremes"
+              },
+              {
+                  "text": "Ambientes de dificil acesso"
+              },
+              {
+                  "text": "Não enfrento"
+              }
+          ]
+      },
+      {
+          "questionText": "Você costuma pegar  estrada na sua rotina?",
+          "options": [{
+                  "text": "Sim"
+              },
+              {
+                  "text": "Não"
+              }
+          ]
+      },
+      {
+          "questionText": "Você utiliza o carro para viajar?",
+          "options": [{
+                  "text": "Muito (15 + vezes p/ano)"
+              },
+              {
+                  "text": "Médio (7 a 15 vezes p/ano)"
+              },
+              {
+                  "text": "Pouco (3 a 7 vezes p/ano)"
+              },
+              {
+                  "text": "Quase nunca"
+              }
+          ]
+      }
+  ]
+}

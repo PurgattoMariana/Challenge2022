@@ -17,13 +17,17 @@
   </button>
     <div class="corpo">
         <h1 class="textopergunta1">
-            / Pergunta 01
+            / Pergunta {{currentQuestion+1}} de {{questionList.lenght}}
         </h1>
         <h2 class="textocentral">
-            Com quantas pessoas você costuma andar no carro?
+            {{questionList[currentQuestion]?.questionText}}
         </h2>
         <div class="boxopcoes">
-            <button class="botaoopcao" [ngClass]="{ 'selected': item.selected }" (click)="$selectItem(item.option, x)" *ngFor="let item of question1; let x = index">{{ item.label }}</button>
+          <div *ngFor="let option of questionList[currentQuestion]?.options">
+            <button class="botaoopcao" (click)="answer(currentQuestion+1,option)">
+              {{option.text}}
+            </button>
+        </div>
         </div>
     </div>
 

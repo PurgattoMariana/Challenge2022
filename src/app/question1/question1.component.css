@@ -21,11 +21,11 @@ body {
 }
 
 .corpo {
-    padding-left: 30%;
+    padding-left: 28%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .textopergunta1 {
@@ -41,11 +41,10 @@ body {
 }
 
 .boxopcoes {
-    height: 12rem;
-    width: 40rem;
+    height: 17rem;
+    width: 42rem;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
     justify-content: space-between;
 }
 
