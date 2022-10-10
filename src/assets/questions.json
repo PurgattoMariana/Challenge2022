@@ -271,7 +271,7 @@
 
 
       {
-          "questionText": "18Você costuma andar com quantas pessoas no carro? (Incluindo você)",
+          "questionText": "Você costuma andar com quantas pessoas no carro? (Incluindo você)",
           "options": [{
                   "text": "1 a 2 pessoas",
                   "pessoas12":true
@@ -317,7 +317,7 @@
                 "obstaculosim":true
             },
             {
-                "text": "Locais que Alagam frequentemente",
+                "text": "Locais que alagam frequentemente",
                 "obstaculosim":true
             },
             {

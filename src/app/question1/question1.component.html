@@ -20,7 +20,7 @@
     </button>
     <div class="corpo">
         <h1 class="textopergunta1">
-          / Pergunta {{currentQuestion+1}} de {{questionList.length}}
+          / Pergunta {{fakeResult+1}}
         </h1>
         <h2 class="textocentral">
             {{questionList[currentQuestion]?.questionText}}
@@ -40,34 +40,46 @@
         arrow_back_ios
       </span>
     </button>
+    <button class="botaorecomecar" routerLink="/home">
+      Reiniciar Teste
+    </button>
       <div class="corporesultado">
         <div  class="showcarro">
-          <img src="{{resultList[currentResult]?.linkprincipal}}"  style="height:90%;">
+          <img src="{{resultList[currentResult]?.linkprincipal}}"  style="height:100%;">
         </div>
-        <div class="textoperfil" style="margin: 20px;width: 440px;">
+        <div class="textoperfil" style="margin: 20px 40px;width: 440px;">
           <h1>
             {{resultList[currentResult]?.title}}
           </h1>
           <h2>
             {{resultList[currentResult]?.description}}
           </h2>
+          <button class="btn-share" style="font-size: large;">
+            Compartilhar resultado
+            <span class="material-icons">
+              share
+            </span>
+          </button>
         </div>
+
       </div>
       <div class="conhecatambem">
         <h1>Conheça também</h1>
         <ul style="display: flex;">
           <div  class="showminicarro">
             <img src="{{resultList[currentResult]?.option1link}}">
-            <h6>{{resultList[currentResult]?.option1name}}</h6>
+           <h6>{{resultList[currentResult]?.option1name}}</h6>
           </div>
           <div  class="showminicarro">
             <img src="{{resultList[currentResult]?.option2link}}">
             <h6>{{resultList[currentResult]?.option2name}}</h6>
           </div>
-          <div  class="showminicarro" style="background-color: var(--bg-padrao);">
-            <span class="material-icons">
-              add
-            </span>
+          <div  class="showminicarro" style="background-color: var(--bg-padrao);" href="https://google.com/" >
+            <button style="background-color: transparent;border: 0px;cursor: pointer;" href="https://google.com/">
+              <span class="material-icons" href="https://google.com/">
+                add
+              </span>
+          </button>
             <h6>Mais opções</h6>
           </div>
         </ul>
