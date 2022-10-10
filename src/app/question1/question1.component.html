@@ -10,14 +10,17 @@
 </head>
 
 <body>
-    <button class="botaovoltar" routerLink="/question">
-    <span class="material-icons">
-      arrow_back_ios
-    </span>
-  </button>
+
+  <ng-container *ngIf="!isQuizCompleted">
+    <button class="botaovoltar" (click)="return()">
+      <!-- routerLink="/question" -->
+      <span class="material-icons">
+        arrow_back_ios
+      </span>
+    </button>
     <div class="corpo">
         <h1 class="textopergunta1">
-            / Pergunta {{currentQuestion+1}} de {{questionList.lenght}}
+          / Pergunta {{currentQuestion+1}} de {{questionList.length}}
         </h1>
         <h2 class="textocentral">
             {{questionList[currentQuestion]?.questionText}}
@@ -27,14 +30,50 @@
             <button class="botaoopcao" (click)="answer(currentQuestion+1,option)">
               {{option.text}}
             </button>
-        </div>
+          </div>
         </div>
     </div>
-
-
-<!-- <span style="font-size: 20px;">{{this.allQuestions.p1 | json}}</span> -->
-
-
+  </ng-container>
+  <ng-container *ngIf="isQuizCompleted">
+    <button class="botaovoltar" routerLink="/question">
+      <span class="material-icons">
+        arrow_back_ios
+      </span>
+    </button>
+      <div class="corporesultado">
+        <div  class="showcarro">
+          <img src="{{resultList[currentResult]?.linkprincipal}}"  style="height:90%;">
+        </div>
+        <div class="textoperfil" style="margin: 20px;width: 440px;">
+          <h1>
+            {{resultList[currentResult]?.title}}
+          </h1>
+          <h2>
+            {{resultList[currentResult]?.description}}
+          </h2>
+        </div>
+      </div>
+      <div class="conhecatambem">
+        <h1>Conheça também</h1>
+        <ul style="display: flex;">
+          <div  class="showminicarro">
+            <img src="{{resultList[currentResult]?.option1link}}">
+            <h6>{{resultList[currentResult]?.option1name}}</h6>
+          </div>
+          <div  class="showminicarro">
+            <img src="{{resultList[currentResult]?.option2link}}">
+            <h6>{{resultList[currentResult]?.option2name}}</h6>
+          </div>
+          <div  class="showminicarro" style="background-color: var(--bg-padrao);">
+            <span class="material-icons">
+              add
+            </span>
+            <h6>Mais opções</h6>
+          </div>
+        </ul>
+      </div>
+  </ng-container>
 </body>
 
 </html>
+<!-- <span style="font-size: 20px;">{{this.allQuestions.p1 | json}}</span> -->

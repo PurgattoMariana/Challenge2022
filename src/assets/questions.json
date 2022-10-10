@@ -4,23 +4,23 @@
           "questionText": "Qual a sua idade?",
           "options": [{
                   "text": "18 a 25 anos",
-                  "nopointsquestion": true
+                  "nopointsanswer": true
               },
               {
                   "text": "26 a 35 anos",
-                  "nopointsquestion": true
+                  "nopointsanswer": true
               },
               {
                   "text": "36 a 45 anos",
-                  "nopointsquestion": true
+                  "nopointsanswer": true
               },
               {
                   "text": "46 a 60 anos",
-                  "nopointsquestion": true
+                  "nopointsanswer": true
               },
               {
                   "text": "mais de 60 anos",
-                  "nopointsquestion": true
+                  "nopointsanswer": true
               }
           ]
       },
@@ -39,173 +39,338 @@
       {
           "questionText": "Qual tipo de transporte você faz?",
           "options": [{
-                  "text": "Transporte de mercadorias"
+                  "text": "Transporte de mercadorias",
+                  "transportemercadoria": true
               },
               {
-                  "text": "Transporte de pessoas"
+                  "text": "Transporte de pessoas",
+                  "transportepessoas": true
               }
           ]
       },
       {
           "questionText": "Ao transportar mercadorias, você preza por uma proteção contra clima e fenômenos externos ou flexibilidade ao colocar e retirar os itens?",
           "options": [{
-                  "text": "Proteção"
+                  "text": "Proteção",
+                  "protecao":true
               },
               {
-                  "text": "Flexibilidade"
+                  "text": "Flexibilidade",
+                  "flexibilidade":true
               }
           ]
       },
       {
           "questionText": "Você enfrenta algum dos obstáculos abaixo diariamente?",
           "options": [{
-                  "text": "Estrada de terra"
+                  "text": "Estrada de terra",
+                  "obstaculo":true
               },
               {
-                  "text": "Subidas íngremes"
+                  "text": "Subidas íngremes",
+                  "obstaculo":true
               },
               {
-                  "text": "Ambientes de dificil acesso"
+                  "text": "Ambientes de dificil acesso",
+                  "obstaculo":true
               },
               {
-                  "text": "Não enfrento"
+                  "text": "Não enfrento",
+                  "semobstaculo":true
               }
           ]
       },
       {
           "questionText": "Para você, é importante que o transporte tenha compartimentos para organizar as mercadorias?",
           "options": [{
-                  "text": "Sim"
+                  "text": "Sim",
+                  "importante":true
               },
               {
-                  "text": "Não"
+                  "text": "Não",
+                  "naoimportante":true
               }
           ]
       },
       {
           "questionText": "Entre um veículo maior e mais difícil de manusear na cidade e um com menor capacidade de carga porém mais fácil de andar na cidade, qual você prefere?",
           "options": [{
-                  "text": "Maior Capacidade"
+                  "text": "Maior Capacidade",
+                  "maiorcapacidade":true
               },
               {
-                  "text": "Menor Capacidade"
+                  "text": "Menor Capacidade",
+                  "menorcapacidade":true
               }
           ]
       },
       {
           "questionText": "O que você valoriza mais, uma cabine que carrega mais pessoas ou uma caçamba maior?",
           "options": [{
-                  "text": "Maior Caçamba"
+                  "text": "Maior Caçamba",
+                  "maiorcacamba":true
               },
               {
-                  "text": "Maior cabine"
+                  "text": "Maior cabine",
+                  "maiorcabine":true
               }
           ]
       },
       {
-          "questionText": "Em qual das categorias abaixo você se encaixa?",
+          "questionText": "pergunta9Em qual das categorias abaixo você se encaixa?",
           "options": [{
-                  "text": "Transporte individual (aplicativo, taxi ou semelhantes)"
+                  "text": "Transporte individual (aplicativo, taxi ou semelhantes)",
+                  "transporteindividual--":true
               },
               {
-                  "text": "Transporte de mais de 9 pessoas (por exemplo, transporte escolar)"
+                  "text": "Transporte de mais de 9 pessoas (por exemplo, transporte escolar)",
+                  "transportemultiplo":true
               }
           ]
       },
       {
           "questionText": "Quantos passageiros você costuma carregar?",
           "options": [{
-                  "text": "Mais de 14"
+                  "text": "Mais de 14",
+                  "mais14":true
               },
               {
-                  "text": "Menos de 14"
+                  "text": "Menos de 14",
+                  "menos14":true
               }
           ]
       },
       {
-          "questionText": "Você costuma andar com quantas pessoas no carro? (Incluindo você)",
+        "questionText": "Você ja possui um carro?",
+        "options": [{
+                "text": "Sim",
+                "possuicarro":true
+            },
+            {
+                "text": "Não",
+                "nãopossuicarro":true
+            }
+          ]
+      },
+      {
+        "questionText": "Para qual evento você mais vai utilizar o seu carro?",
+        "options": [{
+                "text": "Trabalho",
+                "usotrabalho":true
+            },
+            {
+                "text": "Viagem",
+                "usoviagem":true
+            },
+            {
+                "text": "Rotinas diárias (Compras, Mercado, Crianças, Estudo)",
+                "usorotina":true
+            },
+            {
+                "text": "Todas as anteriores",
+                "usotodas":true
+            }
+        ]
+      },
+      {
+        "questionText": "No seu dia a dia você pretende andar com mais pessoas no seu carro?",
+        "options": [{
+                "text": "1 a 2 pessoas",
+                "pessoas2":true
+            },
+            {
+                "text": "3 a 4 pessoas",
+                "pessoas4":true
+            },
+            {
+                "text": "+5 Pessoas",
+                "pessoas5":true
+            }
+        ]
+      },
+      {
+          "questionText": "A necessidade de um porta-malas grande por conta das atividades cotidianas, viagens e eventos?",
           "options": [{
-                  "text": "1 a 2 pessoas"
+                  "text": "Sim",
+                  "portamalagrande":true
               },
               {
-                  "text": "3 a 4 pessoas"
-              },
-              {
-                  "text": "5 a 6 pessoas"
-              },
-              {
-                  "text": "mais de 6 pessoas"
+                  "text": "Não",
+                  "portamalapequeno":true
               }
           ]
       },
       {
-          "questionText": "Como seu porta malas costuma ficar (Considere eventos e viagens)?",
+        "questionText": "Qual distancia  você pretende percorrer no seu dia a dia (Km)?",
+        "options": [{
+                "text": "1 a 5 km",
+                "km15":true
+            },
+            {
+                "text": "6 a 10 km",
+                "km610":true
+            },
+            {
+                "text": "10 a 20 km",
+                "km1020":true
+            },
+            {
+                "text": "21 + km",
+                "km21mais":true
+            }
+        ]
+      },
+      {
+        "questionText": "Você costuma pegar  estrada na sua rotina?",
+        "options": [{
+                "text": "Sim",
+                "estradasim":true
+            },
+            {
+                "text": "Não",
+                "estradanao":true
+            }
+        ]
+      },
+      {
+        "questionText": "Você vai utilizar o carro para atravessar terrenos não asfaltados, íngremes ou de difícil acesso?",
+        "options": [{
+                "text": "Sim",
+                "ingremesim":true
+            },
+            {
+                "text": "Não",
+                "ingremenao":true
+            }
+        ]
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+          "questionText": "18Você costuma andar com quantas pessoas no carro? (Incluindo você)",
           "options": [{
-                  "text": "lotado"
+                  "text": "1 a 2 pessoas",
+                  "pessoas12":true
               },
               {
-                  "text": "quase lotado"
+                  "text": "3 a 4 pessoas",
+                  "pessoas34":true
               },
               {
-                  "text": "quase vazio"
-              },
-              {
-                  "text": "vazio"
+                  "text": "Mais de 5 pessoas",
+                  "pessoas5mais":true
               }
           ]
       },
       {
-          "questionText": "Qual distancia  você percorre no seu dia a dia (Km)?",
-          "options": [{
-                  "text": "1 a 5 km"
-              },
-              {
-                  "text": "5 a 10 km"
-              },
-              {
-                  "text": "10 a 30 km"
-              },
-              {
-                  "text": "30 + km"
-              }
-          ]
+        "questionText": "Qual distancia você percorre no seu dia a dia (Km)?",
+        "options": [{
+                "text": "1 a 5 km",
+                "distancia15":true
+            },
+            {
+                "text": "6 a 10 km",
+                "distancia610":true
+            },
+            {
+                "text": "10 a 30 km",
+                "distancia1030":true
+            },
+            {
+                "text": "30 + km",
+                "distancia30mais":true
+            }
+        ]
       },
       {
-          "questionText": "Você enfrenta algum dos obstáculos abaixo diariamente?",
+        "questionText": "Você enfrenta algum dos obstáculos abaixo diariamente?",
+        "options": [{
+                "text": "Subidas íngremes",
+                "obstaculosim":true
+            },
+            {
+                "text": "Possuem estrada de terra/lama",
+                "obstaculosim":true
+            },
+            {
+                "text": "Locais que Alagam frequentemente",
+                "obstaculosim":true
+            },
+            {
+                "text": "Não enfrento",
+                "obstaculonao":true
+            }
+        ]
+      },
+      {
+          "questionText": "Como seu porta-malas costuma ficar (Considere eventos e viagens)?",
           "options": [{
-                  "text": "Subidas íngremes"
+                  "text": "Lotado",
+                  "portamalalotado":true
               },
               {
-                  "text": "Ambientes de dificil acesso"
+                  "text": "Tem um pouco de espaço",
+                  "portamalamedio":true
               },
               {
-                  "text": "Não enfrento"
+                  "text": "Tem bastante espaço",
+                  "portamalavazio":true
               }
           ]
       },
       {
           "questionText": "Você costuma pegar  estrada na sua rotina?",
           "options": [{
-                  "text": "Sim"
+                  "text": "Sim",
+                  "estradarotinasim":true
               },
               {
-                  "text": "Não"
+                  "text": "Não",
+                  "estradarotinanao":true
               }
           ]
       },
       {
           "questionText": "Você utiliza o carro para viajar?",
           "options": [{
-                  "text": "Muito (15 + vezes p/ano)"
+                  "text": "Muito (15 + vezes p/ano)",
+                  "viagemmuito":true
               },
               {
-                  "text": "Médio (7 a 15 vezes p/ano)"
+                  "text": "Médio (7 a 15 vezes p/ano)",
+                  "viagemmedio":true
               },
               {
-                  "text": "Pouco (3 a 7 vezes p/ano)"
+                  "text": "Pouco (3 a 7 vezes p/ano)",
+                  "viagempouco":true
               },
               {
-                  "text": "Quase nunca"
+                  "text": "Quase nunca",
+                  "viagempouco":true
               }
           ]
       }
