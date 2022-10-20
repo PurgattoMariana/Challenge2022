@@ -525,23 +525,6 @@ export class Question1Component implements OnInit {
       this.addVariablesToArray(option);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     if(option.mais14){
       this.isQuizCompleted = true;
       this.currentResult = 9;
@@ -609,7 +592,7 @@ export class Question1Component implements OnInit {
       console.log(this.resultList[this.currentResult].title);
       this.answerList.push(this.resultList[this.currentResult].title);
       this.http
-        .post("http://localhost:3080/api/book",this.answerList).subscribe();
+        .post("https://challenge-ford-backend.herokuapp.com/api/book",this.answerList).subscribe();
       console.log("Dados enviados")
     }
 
