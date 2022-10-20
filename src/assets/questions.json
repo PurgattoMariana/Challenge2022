@@ -117,10 +117,10 @@
           ]
       },
       {
-          "questionText": "pergunta9Em qual das categorias abaixo você se encaixa?",
+          "questionText": "Em qual das categorias abaixo você se encaixa?",
           "options": [{
                   "text": "Transporte individual (aplicativo, taxi ou semelhantes)",
-                  "transporteindividual--":true
+                  "transporteindividual":true
               },
               {
                   "text": "Transporte de mais de 9 pessoas (por exemplo, transporte escolar)",
@@ -245,31 +245,6 @@
         ]
       },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       {
           "questionText": "Você costuma andar com quantas pessoas no carro? (Incluindo você)",
           "options": [{
@@ -371,6 +346,47 @@
               {
                   "text": "Quase nunca",
                   "viagempouco":true
+              }
+          ]
+      },
+
+      {
+          "questionText": "Você faz questão de sempre possuir o carro do ano?",
+          "options": [{
+                  "text": "Sim",
+                  "carroano":true
+              },
+              {
+                  "text": "Não",
+                  "carrovelho":true
+              }
+          ]
+      },
+      {
+          "questionText": "Com qua frequência estima trocar o modelo do seu carro?",
+          "options": [{
+                  "text": "Até 1 ano",
+                  "trocamuito":true
+              },
+              {
+                  "text": "2 a 5 anos",
+                  "trocamuito":true
+              },
+              {
+                  "text": "+5 anos",
+                  "trocapouco":true
+              }
+          ]
+      },
+      {
+          "questionText": "Para você, gastos com manutenção é uma grande preocupação?",
+          "options": [{
+                  "text": "Sim",
+                  "manutencaosim":true
+              },
+              {
+                  "text": "Não",
+                  "manutencaonao":true
               }
           ]
       }

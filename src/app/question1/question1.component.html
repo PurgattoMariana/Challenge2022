@@ -12,11 +12,9 @@
 <body>
 
   <ng-container *ngIf="!isQuizCompleted">
-    <button class="botaovoltar" (click)="return()">
-      <!-- routerLink="/question" -->
-      <span class="material-icons">
-        arrow_back_ios
-      </span>
+
+    <button class="botaorecomecar" routerLink="/question">
+      Reiniciar Teste
     </button>
     <div class="corpo">
         <h1 class="textopergunta1">
@@ -35,14 +33,6 @@
     </div>
   </ng-container>
   <ng-container *ngIf="isQuizCompleted">
-    <button class="botaovoltar" routerLink="/question">
-      <span class="material-icons">
-        arrow_back_ios
-      </span>
-    </button>
-    <button class="botaorecomecar" routerLink="/home">
-      Reiniciar Teste
-    </button>
       <div class="corporesultado">
         <div  class="showcarro">
           <img src="{{resultList[currentResult]?.linkprincipal}}"  style="height:100%;">
@@ -74,16 +64,21 @@
             <img src="{{resultList[currentResult]?.option2link}}">
             <h6>{{resultList[currentResult]?.option2name}}</h6>
           </div>
-          <div  class="showminicarro" style="background-color: var(--bg-padrao);" href="https://google.com/" >
-            <button style="background-color: transparent;border: 0px;cursor: pointer;" href="https://google.com/">
-              <span class="material-icons" href="https://google.com/">
-                add
-              </span>
-          </button>
-            <h6>Mais opções</h6>
+          <div  class="showminicarro" style="background-color: var(--bg-padrao);">
+            <a href="https://www.ford.com.br/compre-o-seu/monte-o-seu/selecione-um-veiculo/">
+              <button style="background-color: transparent;border: 0px;cursor: pointer;" >
+                <span class="material-icons" >
+                  add
+                </span>
+              </button>
+              <h6>Mais opções</h6>
+            </a>
           </div>
         </ul>
       </div>
+      <button class="botaorecomecar" routerLink="/home">
+        Reiniciar Teste
+      </button>
   </ng-container>
 </body>
 

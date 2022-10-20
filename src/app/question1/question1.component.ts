@@ -1,5 +1,6 @@
 import { QuestionService } from './../service/question.service';
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-question1',
@@ -9,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class Question1Component implements OnInit {
 
   public questionList : any = [];
+  public answerList: any = [];
   public resultList : any = [];
   public sortArray : any = [];
   public result : any = [];
@@ -24,6 +26,8 @@ export class Question1Component implements OnInit {
   public portaMalas : number = 0;
   public espacoInterno : number = 0;
   isQuizCompleted : boolean = false;
+  resultadoGoPicape : boolean = false;
+  resultadoGoSUV : boolean = false;
 
   public var1 : any = ["Conforto","Consumo","PortaMalas"];
   public var2 : any = ["Consumo","EspacoInterno","PortaMalas"];
@@ -52,7 +56,7 @@ export class Question1Component implements OnInit {
 
 
 
-  constructor(private questionService : QuestionService) { }
+  constructor(private questionService : QuestionService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.getAllQuestions();
@@ -77,7 +81,7 @@ export class Question1Component implements OnInit {
     this.currentQuestion--;
   }
 
-  addVariablesToArray(){
+  addVariablesToArray(option:any){
     const items = [
       { name: 'Potencia', value: this.potencia },
       { name: 'Conforto', value: this.conforto },
@@ -94,12 +98,12 @@ export class Question1Component implements OnInit {
     this.result = [items[0].name,items[1].name,items[2].name].sort();
     console.log(this.result);
 
-    this.compareArrays();
+    this.compareArrays(option);
 
   }
 
 
-  compareArrays(){
+  compareArrays(option:any){
 
     if((this.result[0] === this.var1[0]) && (this.result[1] === this.var1[1]) && (this.result[2] === this.var1[2])){
       this.isQuizCompleted = true;
@@ -108,8 +112,8 @@ export class Question1Component implements OnInit {
       console.log("false");
     }
     if((this.result[0] === this.var2[0]) && (this.result[1] === this.var2[1]) && (this.result[2] === this.var2[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 4;
+      this.resultadoGoPicape = true;
+      this.return;
     } else {
       console.log("false");
     }
@@ -126,32 +130,32 @@ export class Question1Component implements OnInit {
       console.log("false");
     }
     if((this.result[0] === this.var5[0]) && (this.result[1] === this.var5[1]) && (this.result[2] === this.var5[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 4;
+      this.resultadoGoPicape = true;
+      this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var6[0]) && (this.result[1] === this.var6[1]) && (this.result[2] === this.var6[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 4;
+      this.resultadoGoPicape = true;
+      this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var7[0]) && (this.result[1] === this.var7[1]) && (this.result[2] === this.var7[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 4;
+      this.resultadoGoPicape = true;
+      this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var8[0]) && (this.result[1] === this.var8[1]) && (this.result[2] === this.var8[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 4;
+      this.resultadoGoPicape = true;
+      this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var9[0]) && (this.result[1] === this.var9[1]) && (this.result[2] === this.var9[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 4;
+      this.resultadoGoPicape = true;
+      this.return;
     } else {
       console.log("false");
     }
@@ -192,8 +196,8 @@ export class Question1Component implements OnInit {
       console.log("false");
     }
     if((this.result[0] === this.var16[0]) && (this.result[1] === this.var16[1]) && (this.result[2] === this.var16[2])){
-      this.isQuizCompleted = true;
-      this.currentResult = 2;
+      this.resultadoGoSUV = true;
+      this.return;
     } else {
       console.log("false16");
     }
@@ -225,7 +229,6 @@ export class Question1Component implements OnInit {
   }
 
 
-
   answer(currentQno: number, option:any){
 
     if(option.nopointsanswer){
@@ -252,6 +255,15 @@ export class Question1Component implements OnInit {
     }
     if(option.transportemultiplo){
       this.fakeResult ++;
+      this.currentQuestion++;
+    }
+    if(option.transporteindividual){
+      this.conforto += 10;
+      this.consumo += 70;
+      this.torque += 20;
+      this.espacoInterno += 20;
+      this.fakeResult ++;
+      this.currentQuestion = 18;
       this.currentQuestion++;
     }
     if(option.flexibilidade ){
@@ -396,14 +408,14 @@ export class Question1Component implements OnInit {
       this.consumo -= 10;
       this.torque += 50;
       this.currentQuestion++;
-      this.addVariablesToArray();
+      this.addVariablesToArray(option);
     }
     if(option.ingremenao){
       this.fakeResult ++;
       this.consumo += 20;
       this.torque += 20;
       this.currentQuestion++;
-      this.addVariablesToArray();
+      this.addVariablesToArray(option);
     }
     if(option.pessoas12){
       this.fakeResult ++;
@@ -494,7 +506,7 @@ export class Question1Component implements OnInit {
       this.consumo -= 10;
       this.portaMalas  += 20;
       this.currentQuestion++;
-      this.addVariablesToArray();
+      this.addVariablesToArray(option);
     }
     if(option.viagemmedio){
       this.fakeResult ++;
@@ -502,7 +514,7 @@ export class Question1Component implements OnInit {
       this.conforto += 20;
       this.portaMalas  += 10;
       this.currentQuestion++;
-      this.addVariablesToArray();
+      this.addVariablesToArray(option);
     }
     if(option.viagempouco){
       this.fakeResult ++;
@@ -510,8 +522,9 @@ export class Question1Component implements OnInit {
       this.consumo += 10;
       this.portaMalas  -= 10;
       this.currentQuestion++;
-      this.addVariablesToArray();
+      this.addVariablesToArray(option);
     }
+
 
 
 
@@ -547,35 +560,66 @@ export class Question1Component implements OnInit {
     }
     if(option.maiorcacamba){
       this.isQuizCompleted = true;
-      this.currentResult = 3;
-    }
-    if(option.maiorcabine){
-      this.isQuizCompleted = true;
       this.currentResult = 2;
     }
+    if(option.maiorcabine){
+      this.resultadoGoPicape = true;
+      this.currentQuestion=22;
+      this.currentQuestion++;
+    }
 
 
+    if(this.resultadoGoPicape === true && option.carroano){
+      this.currentQuestion++;
+    }
+    if(this.resultadoGoPicape === true && option.trocamuito){
+      this.currentQuestion++;
+    }
+    if(this.resultadoGoPicape === true && option.manutencaosim){
+      this.isQuizCompleted = true;
+      this.currentResult = 11;
+    }
+    if(this.resultadoGoPicape === true && (option.carrousado || option.carrovelho || option.trocapouco || option.manutencaonao)) {
+      this.isQuizCompleted = true;
+      this.currentResult = 3;
+    }
 
 
-
-
-
-
-
-
-
-
+    if(this.resultadoGoSUV === true && option.carroano){
+      this.currentQuestion++;
+    }
+    if(this.resultadoGoSUV === true && option.trocamuito){
+      this.currentQuestion++;
+    }
+    if(this.resultadoGoSUV === true && option.manutencaosim){
+      this.isQuizCompleted = true;
+      this.currentResult = 12;
+    }
+    if(this.resultadoGoSUV === true && (option.carrousado || option.carrovelho || option.trocapouco || option.manutencaonao)) {
+      this.isQuizCompleted = true;
+      this.currentResult = 4;
+    }
 
 
     this.currentAnswer = option;
+    this.answerList.push(this.currentAnswer["text"]);
+
+    if(this.isQuizCompleted==true){
+      console.log("Enviando dados...")
+      console.log(this.resultList[this.currentResult].title);
+      this.answerList.push(this.resultList[this.currentResult].title);
+      this.http
+        .post("http://localhost:3080/api/book",this.answerList).subscribe();
+      console.log("Dados enviados")
+    }
+
     console.log(this.currentAnswer);
+    console.log(this.answerList);
     console.log(this.potencia);
     console.log(this.conforto);
     console.log(this.consumo);
     console.log(this.torque);
     console.log(this.portaMalas);
     console.log(this.espacoInterno);
-
-
   }
 }

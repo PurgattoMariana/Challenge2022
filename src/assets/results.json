@@ -93,11 +93,29 @@
     {
       "title": "Van Transporte Pequena",
       "description": "Possui espaço para duas pessoas na cabine e é perfeita para deslocamento de pessoas com conforto e segurança no dia a dia. Ideal para transportes escolares e outros serviços de transporte de clientes.",
-      "linkprincipal":"./../../assets/imagens/transit-pessoas.png",
+      "linkprincipal":"./../../assets/imagens/transit-pessoas2.png",
       "option1link": "./../../assets/imagens/Vans/transitfurgao.png",
       "option1name": "Van Furgão Pequena",
       "option2link": "./../../assets/imagens/fordgoquadrado.png",
       "option2name": "Ford Go"
+    },
+    {
+      "title": "Ford Go Picape",
+      "description": "O FodGo é o serviço de assinatura de carros da Ford. Com ele você paga um valor fixo por mês e recebe o ford de sua preferência 0Km com todos os serviços , IPVA, Seguro e Revisão inclusos na mensalidade!",
+      "linkprincipal":"./../../assets/imagens/fordgoquadrado.png",
+      "option1link": "./../../assets/imagens/FordRangerXL2cs.png",
+      "option1name": "Pickup Cabine Simples",
+      "option2link": "./../../assets/imagens/OffRoad/maverick.png",
+      "option2name": "Pickup Cabine Dupla"
+    },
+    {
+      "title": "Ford Go SUV Compacto",
+      "description": "O FodGo é o serviço de assinatura de carros da Ford. Com ele você paga um valor fixo por mês e recebe o ford de sua preferência 0Km com todos os serviços , IPVA, Seguro e Revisão inclusos na mensalidade!",
+      "linkprincipal":"./../../assets/imagens/fordgoquadrado.png",
+      "option1link": "./../../assets/imagens/SUV/SUV Compacto/ecoesport2.png",
+      "option1name": "SUV Compacto",
+      "option2link": "./../../assets/imagens/SUV/SUV Conforto/territorysuv.webp",
+      "option2name": "SUV Conforto"
     }
   ]
 }
