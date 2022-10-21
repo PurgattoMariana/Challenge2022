@@ -112,7 +112,7 @@ export class Question1Component implements OnInit {
       console.log("false");
     }
     if((this.result[0] === this.var2[0]) && (this.result[1] === this.var2[1]) && (this.result[2] === this.var2[2])){
-      this.resultadoGoPicape = true;
+      this.resultadoGoSUV = true;
       this.return;
     } else {
       console.log("false");
@@ -130,31 +130,31 @@ export class Question1Component implements OnInit {
       console.log("false");
     }
     if((this.result[0] === this.var5[0]) && (this.result[1] === this.var5[1]) && (this.result[2] === this.var5[2])){
-      this.resultadoGoPicape = true;
+      this.resultadoGoSUV = true;
       this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var6[0]) && (this.result[1] === this.var6[1]) && (this.result[2] === this.var6[2])){
-      this.resultadoGoPicape = true;
+      this.resultadoGoSUV = true;
       this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var7[0]) && (this.result[1] === this.var7[1]) && (this.result[2] === this.var7[2])){
-      this.resultadoGoPicape = true;
+      this.resultadoGoSUV = true;
       this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var8[0]) && (this.result[1] === this.var8[1]) && (this.result[2] === this.var8[2])){
-      this.resultadoGoPicape = true;
+      this.resultadoGoSUV = true;
       this.return;
     } else {
       console.log("false");
     }
     if((this.result[0] === this.var9[0]) && (this.result[1] === this.var9[1]) && (this.result[2] === this.var9[2])){
-      this.resultadoGoPicape = true;
+      this.resultadoGoSUV = true;
       this.return;
     } else {
       console.log("false");
@@ -196,7 +196,7 @@ export class Question1Component implements OnInit {
       console.log("false");
     }
     if((this.result[0] === this.var16[0]) && (this.result[1] === this.var16[1]) && (this.result[2] === this.var16[2])){
-      this.resultadoGoSUV = true;
+      this.resultadoGoPicape = true;
       this.return;
     } else {
       console.log("false16");
@@ -553,6 +553,7 @@ export class Question1Component implements OnInit {
 
 
     if(this.resultadoGoPicape === true && option.carroano){
+      console.log("PICAPE");
       this.currentQuestion++;
     }
     if(this.resultadoGoPicape === true && option.trocamuito){
@@ -569,6 +570,7 @@ export class Question1Component implements OnInit {
 
 
     if(this.resultadoGoSUV === true && option.carroano){
+      console.log("SUV")
       this.currentQuestion++;
     }
     if(this.resultadoGoSUV === true && option.trocamuito){
@@ -606,3 +608,4 @@ export class Question1Component implements OnInit {
     console.log(this.espacoInterno);
   }
 }
+

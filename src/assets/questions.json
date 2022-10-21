@@ -363,7 +363,7 @@
           ]
       },
       {
-          "questionText": "Com qua frequência estima trocar o modelo do seu carro?",
+          "questionText": "Com qual frequência estima trocar o modelo do seu carro?",
           "options": [{
                   "text": "Até 1 ano",
                   "trocamuito":true
